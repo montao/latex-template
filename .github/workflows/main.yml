@@ -37,3 +37,9 @@ jobs:
       with:
         # The root LaTeX file to be compiled
         root_file: doc.tex
+        
+    - name: Archive pdf
+      uses: actions/upload-artifact@v1
+      with:
+        name: pdf
+        path: doc.pdf 
